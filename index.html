@@ -134,6 +134,57 @@
   .social-links a:hover {
     background: #e2e8f0;
   }
+  
+  /* Card should allow floating icons */
+.card {
+  position: relative;
+}
+
+/* Floating top icons */
+.icon-row {
+  position: absolute;
+  top: -35px;                /* løfter dem op */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Contact item links */
+.contact-item a {
+  color: #475569;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* LinkedIn icon button */
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  text-decoration: none;
+  color: #1e293b;
+  transition: 0.2s;
+}
+
+.linkedin-btn:hover {
+  background: #e2e8f0;
+}
+
+/* SVG icon sizing */
+.linkedin-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: #0a66c2;
+}
+
 </style>
 </head>
 
@@ -149,54 +200,94 @@
 <!-- MAIN CARD -->
 <div class="card">
 
-  <!-- Top icon buttons -->
-  <div class="icon-row">
-    <a class="icon-btn" href="tel:+4542451181">📞</a>
-    <a class="icon-btn" href="mailto:mf@actuo.dk">✉️</a>
-    <a class="icon-btn" href="mathias.vcf" download>💾</a>
-  </div>
+  <!-- Floating top icons -->
+<div class="icon-row">
+  <a class="icon-btn" href="tel:+4542451181">📞</a>
+  <a class="icon-btn" href="mailto:mf@actuo.dk">✉️</a>
+  <a class="icon-btn" href="mathias.vcf" download>💾</a>
+</div>
 
   <!-- Intro text -->
   <div class="intro-text">
     At Actuo, we work with automated Solvency II calculations and reporting, including full traceability and data reuse across all pillars.
     <br><br>
-    We have clients across all of Europe, including UK, integrating to the Bank of England Taxonomy. In 2025, we implemented Hastings (part of Sampo Group).
+    We have clients across all of Europe, including UK, integrating to the Bank of England Taxonomy. In 2025, we implemented Hastings (part of Sampo Group) which you can read more about through the quotes shared on Actuo’s LinkedIn page (find link below).
   </div>
 
   <!-- Contact details -->
-  <div class="contact-item">
-    <span class="label">Telefon</span>
-    <span>+45 42 45 11 81</span>
-  </div>
+<div class="contact-item">
+  <span class="label">Phone</span>
+  <a href="tel:+4542451181">+45 42 45 11 81</a>
+</div>
 
-  <div class="contact-item">
-    <span class="label">E-mail</span>
-    <span>mf@actuo.dk</span>
-  </div>
+<div class="contact-item">
+  <span class="label">E-mail</span>
+  <a href="mailto:mf@actuo.dk">mf@actuo.dk</a>
+</div>
 
-  <div class="contact-item">
-    <span class="label">Hjemmeside</span>
-    <span>actuo.eu</span>
-  </div>
+<div class="contact-item">
+  <span class="label">Website</span>
+  <a href="https://actuo.eu" target="_blank">actuo.eu</a>
+</div>
 
-  <div class="contact-item">
-    <span class="label">Beliggenhed</span>
-    <span>10, 5. Solvgade, Copenhagen K, 1307, Denmark</span>
-  </div>
+<div class="contact-item">
+  <span class="label">Location</span>
+  <a href="https://maps.google.com/?q=Solvgade+10,+Copenhagen" target="_blank">
+    Solvgade 10, 5., Copenhagen K
+  </a>
+</div>
 
   <div class="contact-item">
     <span class="label">Actuo</span>
-    <span>Actuo: Solvency Solutions</span>
+    <span>Solvency II and Solvency UK Solutions</span>
   </div>
 </div>
 
 <!-- BOTTOM SECTION -->
 <div class="bottom-section">
-  <div class="company-label">Find mig på</div>
+  <div class="company-label">Follow us on LinkedIn</div>
+
   <div class="social-links">
-    <a href="https://www.linkedin.com/in/mathias-frederiksen-1323b4233/" target="_blank">LinkedIn</a>
+
+    <!-- Actuo LinkedIn -->
+    <a class="linkedin-btn" href="https://www.linkedin.com/company/1282131" target="_blank">
+      <svg viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
+                 2.24 5 5 5h14c2.76 0 5-2.24 
+                 5-5v-14c0-2.76-2.24-5-5-5zm-11 
+                 19h-3v-10h3v10zm-1.5-11.27c-.96 
+                 0-1.73-.79-1.73-1.76s.78-1.76 
+                 1.73-1.76 1.73.79 
+                 1.73 1.76-.78 1.76-1.73 
+                 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 
+                 0-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.37h.04c.4-.75 
+                 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 
+                 4.6v5.6z"/>
+      </svg>
+      Actuo
+    </a>
+
+    <!-- Mathias LinkedIn -->
+    <a class="linkedin-btn" href="https://www.linkedin.com/in/mathias-frederiksen-1323b4233/" target="_blank">
+      <svg viewBox="0 0 24 24">
+        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
+                 2.24 5 5 5h14c2.76 0 5-2.24 
+                 5-5v-14c0-2.76-2.24-5-5-5zm-11 
+                 19h-3v-10h3v10zm-1.5-11.27c-.96 
+                 0-1.73-.79-1.73-1.76s.78-1.76 
+                 1.73-1.76 1.73.79 
+                 1.73 1.76-.78 1.76-1.73 
+                 1.76zm13.5 11.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 
+                 0-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.37h.04c.4-.75 
+                 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 
+                 4.6v5.6z"/>
+      </svg>
+      Mathias
+    </a>
+
   </div>
 </div>
+
 
 </body>
 </html>

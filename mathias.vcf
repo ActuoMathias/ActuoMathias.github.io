@@ -1,10 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Holm;Michael;;;
-FN:Michael Holm
+N:Frederiksen;Mathias;;;
+FN:Mathias Frederiksen
 ORG:Actuo
 TITLE:Actuary
-TEL;TYPE=CELL:+45-61-28-79-39
-EMAIL;TYPE=INTERNET:mh@actuo.com
-URL:https://actuomichael.github.io
+TEL;TYPE=CELL:+45-42-45-11-81
+EMAIL;TYPE=INTERNET:mf@actuo.dk
+URL:https://actuomathias.github.io/
 END:VCARD
