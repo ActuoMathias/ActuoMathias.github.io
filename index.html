@@ -1,92 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
-  <meta charset="UTF-8" />
-  <title>Your Name – Digital Business Card</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #0f172a;
-      color: #e5e7eb;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mathias Frederiksen – Actuo</title>
 
-    .btn-contact {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    border-radius: 999px;
-    border: 1px solid #4b5563;
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(to bottom, #4f7df3, #89a7f5, #d2dcfb);
+    padding: 4rem 1rem 6rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 1.9rem;
+    font-weight: 700;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+  }
+
+  /* Section card */
+  .card {
+    background: white;
+    max-width: 700px;
+    margin: -3rem auto 2rem;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+
+  .intro-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+    color: #334155;
+  }
+
+  /* Contact icons row */
+  .icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .icon-btn {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: #334155;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #e5e7eb;
-    background: #0f172a;
-    cursor: pointer;
+    transition: 0.2s;
   }
-  .btn-contact:hover {
-    background: #111827;
+
+  .icon-btn:hover {
+    background: #e2e8f0;
   }
-    .card {
-      background: #020617;
-      padding: 2.5rem 2.8rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.7);
-      max-width: 420px;
-      width: 90%;
-      text-align: center;
-    }
-    .name {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-    .title {
-      font-size: 1rem;
-      color: #9ca3af;
-      margin-bottom: 1.5rem;
-    }
-    .bio {
-      font-size: 0.95rem;
-      line-height: 1.5;
-      margin-bottom: 1.8rem;
-      color: #d1d5db;
-    }
-    .links a {
-      display: inline-block;
-      margin: 0.25rem 0.35rem;
-      padding: 0.5rem 0.9rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 0.85rem;
-      border: 1px solid #4b5563;
-      color: #e5e7eb;
-    }
-    .links a:hover {
-      background: #111827;
-    }
-  </style>
+
+  /* Contact section entries */
+  .contact-item {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    color: #475569;
+  }
+
+  .contact-item:last-child {
+    border-bottom: none;
+  }
+
+  .label {
+    font-weight: 600;
+    color: #334155;
+  }
+
+  /* Bottom area */
+  .bottom-section {
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+    padding: 0 1rem;
+  }
+
+  .company-label {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .social-links {
+    margin-top: 1.5rem;
+  }
+
+  .social-links a {
+    display: inline-block;
+    padding: 0.65rem 1.2rem;
+    border-radius: 10px;
+    background: #f1f5f9;
+    text-decoration: none;
+    color: #1e293b;
+    margin-right: 0.6rem;
+    border: 1px solid #cbd5e1;
+    transition: 0.2s;
+  }
+
+  .social-links a:hover {
+    background: #e2e8f0;
+  }
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <div class="name">Mathias Torplund Frederiksen</div>
-    <div class="title">Actuary · Actuo</div>
-    <p class="bio">
-      Developing Europes greatest Solvency II solution.
-    </p>
-    <div class="links">
-      <a href="mailto:mf@actuo.dk">Email</a>
-      <a href="https://www.linkedin.com/in/mathias-frederiksen-1323b4233/" target="_blank">LinkedIn</a>
-    </div>
-    <div class="links">
-      <a href="mathias.vcf" download class="btn-contact">
-      Add to contacts
-      </a>
-    </div>
+
+<!-- HEADER SECTION -->
+<div class="header">
+  <img src="mathias.jpg" alt="Profile picture" class="profile-img">
+  <div class="name">Mathias Frederiksen</div>
+  <div class="title">Actuo: Solvency Solutions</div>
+</div>
+
+<!-- MAIN CARD -->
+<div class="card">
+
+  <!-- Top icon buttons -->
+  <div class="icon-row">
+    <a class="icon-btn" href="tel:+4542451181">📞</a>
+    <a class="icon-btn" href="mailto:mf@actuo.dk">✉️</a>
+    <a class="icon-btn" href="mathias.vcf" download>💾</a>
   </div>
+
+  <!-- Intro text -->
+  <div class="intro-text">
+    At Actuo, we work with automated Solvency II calculations and reporting, including full traceability and data reuse across all pillars.
+    <br><br>
+    We have clients across all of Europe, including UK, integrating to the Bank of England Taxonomy. In 2025, we implemented Hastings (part of Sampo Group).
+  </div>
+
+  <!-- Contact details -->
+  <div class="contact-item">
+    <span class="label">Telefon</span>
+    <span>+45 42 45 11 81</span>
+  </div>
+
+  <div class="contact-item">
+    <span class="label">E-mail</span>
+    <span>mf@actuo.dk</span>
+  </div>
+
+  <div class="contact-item">
+    <span class="label">Hjemmeside</span>
+    <span>actuo.eu</span>
+  </div>
+
+  <div class="contact-item">
+    <span class="label">Beliggenhed</span>
+    <span>10, 5. Solvgade, Copenhagen K, 1307, Denmark</span>
+  </div>
+
+  <div class="contact-item">
+    <span class="label">Actuo</span>
+    <span>Actuo: Solvency Solutions</span>
+  </div>
+</div>
+
+<!-- BOTTOM SECTION -->
+<div class="bottom-section">
+  <div class="company-label">Find mig på</div>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/mathias-frederiksen-1323b4233/" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
 </body>
 </html>
