@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mathias Frederiksen – Actuo</title>
+<link rel="icon" type="image/png" href="Browserlogo.png">
 
 <style>
   body {
@@ -185,6 +186,37 @@
   fill: #0a66c2;
 }
 
+.intro-text a {
+  color: #1e3a8a; /* mørk blå */
+  text-decoration: underline;
+}
+
+.intro-text a:hover {
+  text-decoration: none;
+}
+
+.add-contact-btn {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 12px;
+  background: #0f172a;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+.add-contact-btn:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
 </style>
 </head>
 
@@ -211,7 +243,7 @@
   <div class="intro-text">
     At Actuo, we work with automated Solvency II calculations and reporting, including full traceability and data reuse across all pillars.
     <br><br>
-    We have clients across all of Europe, including UK, integrating to the Bank of England Taxonomy. In 2025, we implemented Hastings (part of Sampo Group) which you can read more about through the quotes shared on Actuo’s LinkedIn page (find link below).
+    We have clients across all of Europe, including UK, integrating to the Bank of England Taxonomy. In 2025, we implemented Hastings (part of Sampo Group) which you can read more about through the quotes shared on Actuo’s LinkedIn page if you <a href="https://www.linkedin.com/feed/update/urn:li:activity:7391107217262817280" target="_blank">click here</a>..
   </div>
 
   <!-- Contact details -->
@@ -233,7 +265,7 @@
 <div class="contact-item">
   <span class="label">Location</span>
   <a href="https://maps.google.com/?q=Solvgade+10,+Copenhagen" target="_blank">
-    Solvgade 10, 5., Copenhagen K
+    Solvgade 10, 5., Copenhagen K, Denmark
   </a>
 </div>
 
@@ -284,6 +316,10 @@
       </svg>
       Mathias
     </a>
+	
+	<a class="add-contact-btn" href="mathias.vcf" download>
+	Add Contact
+	</a>
 
   </div>
 </div>
