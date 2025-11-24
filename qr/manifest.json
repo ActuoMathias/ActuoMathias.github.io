@@ -1,0 +1,14 @@
+{
+  "name": "Mathias Business Card – QR",
+  "short_name": "Mathias QR",
+  "icons": [
+    {
+      "src": "qr.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "background_color": "#0a66c2",
+  "display": "standalone"
+}

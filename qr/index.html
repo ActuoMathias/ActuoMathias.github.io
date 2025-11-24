@@ -6,6 +6,7 @@
 <title>Scan QR</title>
 <link rel="icon" type="image/png" href="qr.png">
 <link rel="apple-touch-icon" href="qr.png">
+<link rel="manifest" href="manifest.json">
 
 <style>
   body {
@@ -25,10 +26,10 @@
     box-shadow: 0 20px 40px rgba(0,0,0,0.25);
   }
   
-  .qr-button {
-  display: inline-block;
+.qr-button {
+  display: block;
   padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   border-radius: 12px;
   background: #0a66c2;
   color: white;
@@ -47,9 +48,11 @@
 </head>
 
 <body>
-	<a class="qr-button" href="https://actuomathias.github.io/">
-  🙋‍♂️ Mathias Business Card
-</a>
-  <img src="qr.png" alt="QR code">
+  <a class="qr-button" href="https://actuomathias.github.io/">
+    🙋‍♂️ Mathias Business Card
+  </a>
+
+  <img src="qr.png" alt="QR Code">
 </body>
+
 </html>
