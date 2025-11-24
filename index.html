@@ -217,6 +217,41 @@
   transform: translateY(-2px);
 }
 
+.linkedin-big-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 350px;
+  margin: 2rem auto 0;
+
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  background: #0a66c2;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+.linkedin-big-btn:hover {
+  background: #004182;
+  transform: translateY(-2px);
+}
+
+.linkedin-big-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: white;
+  flex-shrink: 0;
+}
+
 </style>
 </head>
 
@@ -227,11 +262,11 @@
   <img src="mathias.jpg" alt="Profile picture" class="profile-img">
   <div class="name">Mathias Frederiksen</div>
   <div class="title">Actuo: Solvency Solutions</div>
-  	<a class="add-contact-btn" 
-   href="https://www.linkedin.com/in/mathias-frederiksen-1323b4233/" 
+  	<a class="linkedin-big-btn" 
+   href="https://www.linkedin.com/in/mathias-frederiksen-1323b4233/"
    target="_blank">
 
-	<svg viewBox="0 0 24 24">
+  <svg viewBox="0 0 24 24">
     <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 
              2.24 5 5 5h14c2.76 0 5-2.24 
              5-5v-14c0-2.76-2.24-5-5-5zm-11 
@@ -243,10 +278,10 @@
              0-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.37h.04c.4-.75 
              1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 
              4.6v5.6z"/>
-	</svg>
+  </svg>
 
-	Follow me on LinkedIn
-	</a>
+  Follow me on LinkedIn
+</a>
 </div>
 
 <!-- MAIN CARD -->
@@ -335,12 +370,12 @@
                  4.6v5.6z"/>
       </svg>
       Mathias
-    </a>
+    </a>	-->
 	
 	<a class="add-contact-btn" href="mathias.vcf" download>
 	Add to Contacts 👤
 	</a> 
-	-->
+
 
   </div>
 </div>
